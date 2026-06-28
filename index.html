@@ -389,7 +389,7 @@
                 throw new Error("Please enter your Gemini API Key in the top right corner.");
             }
 
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${state.apiKey}`;
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${state.apiKey}`;
             
             const payload = {
                 contents: [{ parts: [{ text: userQuery }] }],
